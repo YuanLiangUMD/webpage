@@ -28,10 +28,10 @@ main()
 
       printf("connection begins \n");
 
-      const char * s = " <html><h1> Hello, welcome to Yuan Liang's webpage</h1></html>"
+     const char * s = " <html><h1> Hello, welcome to Yuan Liang's webpage</h1>"
                         "<p>My email is yliang12@terpmail.umd.edu and I will use it before graduate </p>"
                         "<p>I have projects with C/C++ and will publish most of source codes</p>"
-                        "<p>Just for sharing, learning and socializing</p>";
+                        "</html>";
 
       write(connfd, s, strlen(s));
       close(connfd);
